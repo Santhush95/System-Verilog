@@ -1,0 +1,155 @@
+[2023-04-02 13:06:27 EDT] vcs -licqueue '-timescale=1ns/1ns' '+vcs+flush+all' '+warn=all' '-sverilog' design.sv testbench.sv  && ./simv +vcs+lic+wait  
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '3.13.0-71-generic' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+                         Chronologic VCS (TM)
+            Version S-2021.09 -- Sun Apr  2 13:06:28 2023
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'design.sv'
+Parsing design file 'testbench.sv'
+Top Level Modules:
+       accumulator_to_7segment
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+2 modules and 0 UDP read.
+recompiling module accumulate_to_7segment
+recompiling module accumulator_to_7segment
+Both modules done.
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/apps/vcsmx/vcs/S-2021.09/linux/lib -L/apps/vcsmx/vcs/S-2021.09/linux/lib  -Wl,-rpath-link=./ -Wl,--no-as-needed   objs/amcQw_d.o   _320_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /apps/vcsmx/vcs/S-2021.09/linux/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/S-2021.09/linux/lib/vcs_save_restore_new.o /apps/vcsmx/vcs/S-2021.09/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .285 seconds to compile + .379 seconds to elab + .261 seconds to link
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09; Runtime version S-2021.09;  Apr  2 13:06 2023
+Ok, 11111101111110
+Ok, 11111101111110
+Ok, 11111101111110
+Ok, 11111101111001
+Ok, 11111101111001
+Ok, 11111101111111
+Ok, 01100001111110
+Ok, 01100001110000
+Ok, 01100001111111
+Ok, 11011011111001
+Ok, 11011011110000
+Ok, 11111101111110
+Ok, 11111100110011
+Ok, 11111101111111
+Ok, 01100000110000
+Ok, 01100000110011
+Ok, 01100001111011
+Ok, 11011011111001
+Ok, 11011011110000
+Ok, 11110010110011
+Ok, 11110011111111
+Ok, 11111101111110
+Ok, 11111101011111
+Ok, 11111101111011
+Ok, 01100000110011
+Ok, 01100001111111
+Ok, 01100001111111
+Ok, 11011010110000
+Ok, 11011010110011
+Ok, 11011011110000
+Ok, 11110011101101
+Ok, 11111101111110
+Ok, 11111101011111
+Ok, 11111101110000
+Ok, 11111101111111
+Ok, 01100001111110
+Ok, 01100001011111
+Ok, 01100001011111
+Ok, 11011010110000
+Ok, 11011011110000
+Ok, 11110011111001
+Ok, 11111101111110
+Ok, 11111101111001
+Ok, 11111101011011
+Ok, 11111101011111
+Ok, 11111101110000
+Ok, 11111101110000
+Ok, 01100000110011
+Ok, 01100001111011
+Ok, 11011010110000
+Ok, 11011011101101
+Ok, 11111101111110
+Ok, 11111101011111
+Ok, 11111101111011
+Ok, 01100000110011
+Ok, 01100001110000
+Ok, 11011010110000
+Ok, 11011011111001
+Ok, 11011011011111
+Ok, 11011011111111
+Ok, 11110011101101
+Ok, 11111101111110
+Ok, 11111101111110
+Ok, 11111101110000
+Ok, 01100000110011
+Ok, 11011010110000
+Ok, 11011010110011
+Ok, 11011010110011
+Ok, 11011011011011
+Ok, 11110011101101
+Ok, 11110011111001
+Ok, 11111101111110
+Ok, 11111100110011
+Ok, 01100001111110
+Ok, 01100001101101
+Ok, 01100001011111
+Ok, 11011011111110
+Ok, 11011011011011
+Ok, 11011011011011
+Ok, 11110011101101
+Ok, 11110011110000
+Ok, 11111101111110
+Ok, 11111100110000
+Ok, 11111101111001
+Ok, 01100001111110
+Ok, 01100001011111
+Ok, 11011010110000
+Ok, 11011011111111
+Ok, 11110010110011
+Ok, 11110011011111
+Ok, 01100110110000
+Ok, 11111101111110
+Ok, 11111101111110
+Ok, 11111101101101
+Ok, 11111101111011
+Ok, 01100000110011
+Ok, 11011010110000
+Ok, 11011011101101
+Ok, 11011011111111
+Ok, 11110011011011
+Ok, 11110011111011
+$finish called from file "testbench.sv", line 36.
+$finish at simulation time              1006000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1006000 ps
+CPU Time:      0.520 seconds;       Data structure size:   0.0Mb
+Sun Apr  2 13:06:30 2023
+Finding VCD file...
+./dump.vcd
+[2023-04-02 13:06:30 EDT] Opening EPWave...
+Done
